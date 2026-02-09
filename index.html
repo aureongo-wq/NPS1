@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPS - AureonGo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.svg" alt="AureonGo" class="logo">
+        </div>
+
+        <div class="card">
+            <h1>Como você avalia nossa experiência?</h1>
+            <p class="subtitle">De 0 a 10, qual a probabilidade de você recomendar a AureonGo?</p>
+
+            <div class="rating-scale">
+                <div class="scale-labels">
+                    <span class="label-start">Pouco provável</span>
+                    <span class="label-end">Muito provável</span>
+                </div>
+                <div class="rating-buttons" id="ratingButtons">
+                    <!-- Botões de 0 a 10 -->
+                    <button class="rating-btn" data-score="0">0</button>
+                    <button class="rating-btn" data-score="1">1</button>
+                    <button class="rating-btn" data-score="2">2</button>
+                    <button class="rating-btn" data-score="3">3</button>
+                    <button class="rating-btn" data-score="4">4</button>
+                    <button class="rating-btn" data-score="5">5</button>
+                    <button class="rating-btn" data-score="6">6</button>
+                    <button class="rating-btn" data-score="7">7</button>
+                    <button class="rating-btn" data-score="8">8</button>
+                    <button class="rating-btn" data-score="9">9</button>
+                    <button class="rating-btn" data-score="10">10</button>
+                </div>
+            </div>
+
+            <div class="feedback-section" id="feedbackSection" style="display: none;">
+                <h2>Conte-nos mais!</h2>
+                <textarea
+                    id="feedbackText"
+                    placeholder="O que motivou sua nota? (opcional)"
+                    rows="4"
+                ></textarea>
+
+                <button class="submit-btn" id="submitBtn">Enviar Avaliação</button>
+            </div>
+
+            <div class="thank-you" id="thankYou" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>Obrigado pelo seu feedback!</h2>
+                <p>Sua opinião é muito importante para nós.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 AureonGo - Todos os direitos reservados</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
