@@ -45,8 +45,8 @@ const WHATSAPP_NUMBER = '5511999999999'; // Substitua pelo seu número
 **Formato do número:**
 - Código do país: 55 (Brasil)
 - DDD: 11 (São Paulo)
-- Número: 999999999
-- Exemplo completo: `5511999999999`
+- Número: 914470385
+- Exemplo completo: `5511914470385`
 
 ## 🎨 Cores Utilizadas
 
