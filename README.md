@@ -39,7 +39,7 @@ Use um serviço como bit.ly ou tinyurl para criar um link mais curto e fácil de
 Edite o arquivo `script.js` na linha 2:
 
 ```javascript
-const WHATSAPP_NUMBER = '5511999999999'; // Substitua pelo seu número
+const WHATSAPP_NUMBER = '5511914470385'; // Substitua pelo seu número
 ```
 
 **Formato do número:**
