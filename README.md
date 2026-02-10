@@ -62,12 +62,12 @@ O sistema utiliza as cores da identidade visual AureonGo:
 
 - **Detratores (0-6)**: 😞 Clientes insatisfeitos
 - **Neutros (7-8)**: 😐 Clientes satisfeitos mas sem entusiasmo
-- **Promotores (9-10)**: 😃 Clientes entusiastas
+- **Parceiros (9-10)**: 😃 Clientes entusiastas
 
 ### Cálculo do NPS:
 
 ```
-NPS = (% Promotores) - (% Detratores)
+NPS = (% Parceiros) - (% Detratores)
 ```
 
 O resultado varia de -100 a +100:
