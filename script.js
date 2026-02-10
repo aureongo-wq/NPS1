@@ -17,7 +17,7 @@ ratingButtons.forEach(btn => {
 
         // Remove seleção anterior
         ratingButtons.forEach(b => {
-            b.classList.remove('selected', 'detractor', 'passive', 'promoter');
+            b.classList.remove('selected', 'detractor', 'passive', 'parceiro');
         });
 
         // Adiciona classe baseada na categoria NPS
@@ -109,7 +109,7 @@ function calcularNPS() {
 
     if (avaliacoes.length === 0) return;
 
-    const promotores = avaliacoes.filter(a => a.score >= 9).length;
+    const parceiros = avaliacoes.filter(a => a.score >= 9).length;
     const detratores = avaliacoes.filter(a => a.score <= 6).length;
     const total = avaliacoes.length;
 
@@ -117,7 +117,7 @@ function calcularNPS() {
 
     console.log('=== RELATÓRIO NPS ===');
     console.log(`Total de avaliações: ${total}`);
-    console.log(`Parceiros (9-10): ${promotores} (${Math.round(parceiros/total*100)}%)`);
+    console.log(`Parceiros (9-10): ${parceiros} (${Math.round(parceiros/total*100)}%)`);
     console.log(`Neutros (7-8): ${avaliacoes.filter(a => a.score >= 7 && a.score <= 8).length}`);
     console.log(`Detratores (0-6): ${detratores} (${Math.round(detratores/total*100)}%)`);
     console.log(`NPS Score: ${nps}`);
@@ -138,3 +138,4 @@ function obterParametrosURL() {
 
 // Inicializa
 obterParametrosURL();
+
